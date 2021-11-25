@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 #define N 4
 
 void add(int A[][N], int B[][N], int C[][N])
@@ -35,4 +34,6 @@ int main()
 	}
 
 	return 0;
+
+
 }
