@@ -1,7 +1,4 @@
-# Matrix
-
-
-This C project aims to create a matrix computing program that runs in the terminal. The key features are:
+This project aims to create a matrix computing program that runs in the terminal. The key features are:
 
 Wide variety of operations
 
@@ -23,3 +20,4 @@ Answer is automatically output in the output.txt file with proper matrix bracket
 Answer is automatically stored in Matrix Answer so that it can be used to compute or perform further operations later on.
 
 User can view each stored matrix value
+
