@@ -14,8 +14,8 @@ void transpose(int A[][N], int B[][M])
 int main()
 {
 	int A[M][N] = { {1, 1, 1, 1},
-					{2, 2, 2, 2},
-					{3, 3, 3, 3}};
+			{2, 2, 2, 2},
+			{3, 3, 3, 3}};
 
 	
 	int B[N][M], i, j;
