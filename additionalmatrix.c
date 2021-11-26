@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 #define N 4
 
 void add(int A[][N], int B[][N], int C[][N])
@@ -8,6 +7,14 @@ void add(int A[][N], int B[][N], int C[][N])
 	for (i = 0; i < N; i++)
 		for (j = 0; j < N; j++)
 			C[i][j] = A[i][j] + B[i][j];
+
+	printf("Result matrix is \n");
+	for (i = 0; i < N; i++)
+	{
+		for (j = 0; j < N; j++)
+		printf("%d ", C[i][j]);
+		printf("\n");
+	}
 }
 
 int main()
@@ -26,13 +33,7 @@ int main()
 	int i, j;
 	add(A, B, C);
 
-	printf("Result matrix is \n");
-	for (i = 0; i < N; i++)
-	{
-		for (j = 0; j < N; j++)
-		printf("%d ", C[i][j]);
-		printf("\n");
-	}
+	
 
-	return 0;
+
 }
