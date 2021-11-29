@@ -79,6 +79,23 @@ Matrix minus(Matrix* A,Matrix* B){
 	
 }
 
+Matrix tranpose(Matrix*A){
+	Matrix C;
+	C.row = A->col;
+	C.col = A->row;
+	C.data = (float**) malloc(sizeof(float*) * C.row);
+	for (int i = 0;i<C.row;i++) {
+		C.data[i] = (float*)calloc(C.col,sizeof(float));
+	}
+
+    for (int i = 0; i <C.row; i++){
+        for (int j = 0; j < C.col; j++){
+            C.data[i][j] = A->data[j][i];
+		}
+	}
+	return C;
+}
+
 int main() {
 	Matrix A ;  
 	Matrix B ; 
@@ -101,7 +118,7 @@ int main() {
 	fillArray(&B);
 	printMatrix(&B,'B');
 
-	C = minus(&A,&B);
+	C = add(&A,&B);
 	printMatrix(&C,'C');
 	
 }
