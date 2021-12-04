@@ -5,12 +5,9 @@ The key features are:
 Addition
 Subtraction
 Multiplication
-Scalar Multiplication
-Exponentiation
-Determinant
 Transposition
-Inverse
-Adjoint
+
+
 
 
 
